@@ -49,7 +49,7 @@ In the **Execute SQL** tab, do the following: 1. Get all the names of students i
 
 Layal graduated on 08/09/2018. Create a table **graduates** that includes:
 
-* ID, Integer, Not Null, Primary key, Auto incerement
+* ID, Integer, Not Null, Primary key, Auto incerementIDNAME
 * Name, Text, Not Null, Unique
 * Age, Integer
 * Gender, Text
