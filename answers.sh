@@ -67,3 +67,19 @@ DELETE FROM students WHERE Name='Layal';
 
 
 
+3-
+
+
+with joined as ( SELECT e.Name, e.Company, c.Date
+FROM employees e
+INNER JOIN companies c ON c.Name=e.Company
+)
+SELECT * FROM joined WHERE Date <= 2000
+
+
+
+with joined as ( SELECT e.Name, e.Company, c.Date
+FROM employees e
+INNER JOIN companies c ON c.Name=e.Company
+)
+SELECT  e.Company FROM employees e where e.Role='Graphic Designer'
