@@ -83,3 +83,31 @@ FROM employees e
 INNER JOIN companies c ON c.Name=e.Company
 )
 SELECT  e.Company FROM employees e where e.Role='Graphic Designer'
+
+
+4- 
+
+
+SELECT MAX(Points)
+FROM students;
+
+
+
+
+SELECT AVG(Points)
+FROM students;
+
+
+SELECT COUNT(Points)
+FROM students
+WHERE Points = 500;
+
+
+
+SELECT * FROM students 
+WHERE Name LIKE '%s%';
+
+
+SELECT *
+FROM students
+ORDER BY Points DESC;
